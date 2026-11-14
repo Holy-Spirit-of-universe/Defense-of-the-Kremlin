@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cj8r07ewen8wc"]
+
+[ext_resource type="Script" uid="uid://bis8cr7j51cya" path="res://scripts/Pause.cs" id="1_f1d2v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m68o1"]
+bg_color = Color(0.06469653, 0.064696535, 0.06469648, 1)
+
+[node name="pause" type="Control" unique_id=2071667476]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f1d2v")
+
+[node name="Panel" type="Panel" parent="." unique_id=1471660136]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.0
+offset_top = -275.0
+offset_right = 450.0
+offset_bottom = 275.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m68o1")
+
+[node name="Exit" type="Button" parent="Panel" unique_id=1032710794]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = 45.0
+offset_right = 225.0
+offset_bottom = 165.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Exit"
+
+[node name="Continue" type="Button" parent="Panel" unique_id=1849779889]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -175.0
+offset_right = 225.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Continue"
